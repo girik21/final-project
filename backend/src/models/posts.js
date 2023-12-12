@@ -6,7 +6,7 @@ const postSchema = new mongoose.Schema({
         required: true
     },
     rating: { type: String, required: true },
-    details: { type: String, requied: true },
+    details: { type: String, required: true },
     imageUrl: { type: String, required: true },
     datePosted: { type: Date, required: true },
     userOwner: { type: mongoose.Schema.Types.ObjectId, ref: "users", required: true },

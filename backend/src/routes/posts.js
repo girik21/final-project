@@ -25,5 +25,23 @@ router.post("/", async (req, res) => {
     }
 })
 
+// router.put("/:postId", async (req, res) => {
+//     const postId = req.params.postId;
+//     const updatedData = req.body;
+
+//     try {
+//         const updatedPost = await postModel.findByIdAndUpdate(postId, updatedData, { new: true });
+
+//         if (!updatedPost) {
+//             return res.status(404).json({ message: 'Post not found' });
+//         }
+
+//         res.json(updatedPost);
+//     } catch (error) {
+//         console.error(error);
+//         res.status(500).json({ message: 'Internal Server Error' });
+//     }
+// });
+
 export { router as postsRouter }
 
